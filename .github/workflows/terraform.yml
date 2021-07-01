@@ -74,7 +74,7 @@ jobs:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     - name: Terraform dir
-      run: ls -a ; pwd
+      run: echo $AWS_ACCESS_KEY; echo $TESTE
 
     - name: Terraform Init
       run: terraform init
