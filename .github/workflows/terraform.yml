@@ -73,7 +73,7 @@ jobs:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     - name: Terraform dir
-      run: cd terraform
+      run: ls -a ; pwd
 
     - name: Terraform Init
       run: terraform init
