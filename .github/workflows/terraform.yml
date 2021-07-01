@@ -61,6 +61,9 @@ jobs:
       run:
         shell: bash
         working-directory: terraform
+      env:
+        AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
+        AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
 
     steps:
     # Checkout the repository to the GitHub Actions runner
