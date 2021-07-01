@@ -76,6 +76,10 @@ jobs:
     - name: Terraform Init
       run: terraform init
 
+    # Select workspace
+    - name: Terraform workspace stg
+      run: terraform workspace select stg
+
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan
