@@ -75,6 +75,8 @@ jobs:
 
     - name: Terraform dir
       run: echo $AWS_ACCESS_KEY; echo $TESTE
+      env:
+        AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
 
     - name: Terraform Init
       run: terraform init
