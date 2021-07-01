@@ -11,7 +11,7 @@ terraform {
   backend "s3" {
     bucket    = "arglabs-terraform-states" 
     region    = "sa-east-1"
-    key       = "sre/deep-thought.state"
+    key       = "infra/sre/deep-thought.state"
   }
 }
 

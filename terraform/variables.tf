@@ -6,11 +6,11 @@ locals {
   subteam             = "sre"
   email_contact       = "noreply@arglabs.org"
   app_name            = "deep-thought"
-  repository          = "https://bitbucket.org/arglabs/arglabs-sre-deep-thought"
+  repository          = "https://github.com/ARGLabs/arglabs-infra-deep-thought"
   environment         = terraform.workspace
   deployer_account_id = data.aws_caller_identity.current.account_id
   deployer_user_id    = data.aws_caller_identity.current.user_id
-  internal_dns_zone   = "sre.arglabs"
+  internal_dns_zone   = "infra.arglabs"
   region              = var.region[terraform.workspace]
 
   # Env vars that have defaults:
